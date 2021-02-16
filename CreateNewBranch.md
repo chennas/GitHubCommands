@@ -1,0 +1,8 @@
+## There are 2 steps involved to create a branch and push to git hub cloud.
+
+# Step 1
+* git checkout -b {NewBranchName}
+
+
+# Step 2
+* git push --set-upstream origin {NewBranchName}
