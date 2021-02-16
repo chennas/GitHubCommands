@@ -1,0 +1,14 @@
+In this video I will show you how to rename a GIT Branch in your local repository and push to GitHub Cloud.
+
+There are 3 steps to do this.
+
+Step 1. Rename the branch locally.
+    git branch -m old_branch_name new_branch_name
+
+Step 2. Delete the branch from local repository
+    git push origin --delete old_branch_name
+
+    git push origin :old_branch_name
+
+Step 3. Push the new branch to your git hub account in cloud.
+    git push origin new_branch_name
