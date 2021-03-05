@@ -1,0 +1,24 @@
+In today's video we will see how to remove a commit from GitHub.
+
+Before you execute these commands, make sure that you are doing in the correct branch, executing these commands will lose your data.
+
+Step 1: Checkout to the branch which you want to remove the commits.
+        git checkout {branch_name}
+
+Step 2: See the commits from the git branch.
+        git log -5 --oneline
+
+Step 3: Run the below command to set the pointer to the commit that you want, any commits above this commit branch will be removed. If you want to remove the commit id 0798220 , you need to take (n-1) commit and reset it.
+
+        For Example:
+        sha1-commit-id      Commit Message
+        ==================================
+        0798220             commit1 message
+        5a99e96             commit2 message
+
+        git reset --hard <sha1-commit-id>
+
+Step-4: Make sure that you run the below command to push your changes to git hub.
+
+        git push origin HEAD --force
+
