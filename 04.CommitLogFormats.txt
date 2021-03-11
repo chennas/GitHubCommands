@@ -1,0 +1,20 @@
+In this video we will see the different types of log formats.
+
+For a complete list please visit the below URL
+================================================
+
+https://git-scm.com/docs/git-log
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_formats
+
+================================================
+
+Git commands are huge and we don't need to learn all of them, as always we can refer the documentation, but knowing few of them will really helpful if we have them on finger tips. I will show around the most useful log formats.
+
+1.Display all the commits for a branch.
+2.Display only the N number of commits.
+3.Show the commits by Author or Committer.
+4.Show the commits by N Days Ago.
+5.Display the commits by Date Range.
+6.Display the results in one line.
+7.Using the Formatting options on the Git Log.
+8.
