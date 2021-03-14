@@ -15,7 +15,7 @@ Git commands are huge and we don't need to learn all of them, as always we can r
     git log -5
 
 3.Show the commits by Author or Committer.
-    git log --author <name>
+    git log --author <name> {{Chris Ramón}}
     git log --committer <name>
 
 4.Show the commits by N Days Ago.
@@ -28,4 +28,20 @@ Git commands are huge and we don't need to learn all of them, as always we can r
 7.Using the Formatting options on the Git Log.
     git log --pretty=format:"<options>"
 
+    %h --> sha1 commit ids in short format.
+    %H --> sha1 commit ids in long format.
+    %ad --> The date when the commit is created.
+    %s --> Commit Subject message.
+    %an --> Author name.
+
+    The below are some other options we use in conjunction to change the color of the text while displaying the commit messages.
+        %Creset: Changes the color back to default(white) color
+        %Cgreen: Changes the text color to green
+        %Cred: Changes the text color to red
+        %Cblue: Make the author name blue in color
+        %C(CustomColorName): Turn the following string to yellow
+            Example: %C(yellow): To change the text color to yellow.
+
+
 8.How to save the logs messages to a csv or delimiter file.
+    git log --oneline > GitCommits.log
